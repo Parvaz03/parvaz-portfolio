@@ -37,6 +37,17 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const el = document.querySelector(href);
@@ -97,7 +108,7 @@ export default function Navigation() {
 
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-[99] bg-[#050508]/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden">
+        <div className="fixed inset-0 z-[99] bg-[#050508]/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 py-16 overflow-y-auto md:hidden">
           {navLinks.map((link, i) => (
             <a
               key={link.href}

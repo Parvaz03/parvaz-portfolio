@@ -21,10 +21,10 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[100dvh] flex items-end pb-[12vh] px-6 md:px-[12%]"
+      className="relative min-h-[100dvh] flex items-center md:items-end pb-[12vh] px-6 md:px-[12%]"
       style={{ zIndex: 2 }}
     >
-      <div className="max-w-[600px]">
+      <div className="w-full max-w-[600px] flex flex-col items-center text-center md:items-start md:text-left">
         <span className="font-mono text-xs tracking-[0.08em] text-[#4A7CFF] uppercase">
           Computer Science Engineering &apos;26
         </span>
@@ -33,7 +33,7 @@ export default function Hero() {
           <span
             className="block font-archivo font-extrabold text-[#F0F0F5] tracking-[-0.02em] leading-[0.95]"
             style={{
-              fontSize: 'clamp(64px, 10vw, 140px)',
+              fontSize: 'clamp(44px, 8vw, 110px)',
               textShadow: '0 0 40px rgba(5,5,8,0.8), 0 2px 10px rgba(5,5,8,0.6)',
             }}
           >
@@ -42,7 +42,7 @@ export default function Hero() {
           <span
             className="block font-archivo font-extrabold text-[#F0F0F5] tracking-[-0.02em] leading-[0.95] mt-2"
             style={{
-              fontSize: 'clamp(64px, 10vw, 140px)',
+              fontSize: 'clamp(44px, 8vw, 110px)',
               textShadow: '0 0 40px rgba(5,5,8,0.8), 0 2px 10px rgba(5,5,8,0.6)',
             }}
           >
@@ -64,11 +64,11 @@ export default function Hero() {
           Transforming data into insights. Building intelligent systems. Securing the cloud.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full justify-center md:justify-start">
           <a
             href="#projects"
             onClick={(e) => handleNavClick(e, '#projects')}
-            className="inline-flex items-center justify-center px-8 py-[14px] bg-[#4A7CFF] text-[#050508] font-archivo text-sm font-semibold rounded hover:bg-[#6B95FF] transition-colors duration-300"
+            className="inline-flex items-center justify-center px-8 py-[14px] bg-[#4A7CFF] text-[#050508] font-archivo text-sm font-semibold rounded hover:bg-[#6B95FF] transition-colors duration-300 w-full sm:w-auto"
           >
             View Projects
           </a>
@@ -77,7 +77,7 @@ export default function Hero() {
             download="Parvaz_Imamudeen_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-[14px] border border-[#555560] text-[#F0F0F5] font-archivo text-sm font-semibold rounded hover:border-[#4A7CFF] hover:text-[#4A7CFF] transition-colors duration-300"
+            className="inline-flex items-center justify-center px-8 py-[14px] border border-[#555560] text-[#F0F0F5] font-archivo text-sm font-semibold rounded hover:border-[#4A7CFF] hover:text-[#4A7CFF] transition-colors duration-300 w-full sm:w-auto"
           >
             📄 Download Resume
           </a>

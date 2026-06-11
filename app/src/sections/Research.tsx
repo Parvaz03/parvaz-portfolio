@@ -57,7 +57,7 @@ export default function Research() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-[70%_30%]">
             {/* Text area */}
-            <div className="p-8 md:p-12">
+            <div className="p-6 sm:p-8 md:p-12">
               <span className="inline-block font-mono text-[11px] text-[#4A7CFF]">
                 JOURNAL ARTICLE
               </span>
@@ -139,7 +139,7 @@ export default function Research() {
           </div>
 
           {/* Year watermark */}
-          <div className="absolute bottom-4 right-6 font-archivo text-[48px] font-bold text-[#555560] opacity-30 pointer-events-none select-none">
+          <div className="hidden sm:block absolute bottom-4 right-6 font-archivo text-[48px] font-bold text-[#555560] opacity-30 pointer-events-none select-none">
             2026
           </div>
         </div>

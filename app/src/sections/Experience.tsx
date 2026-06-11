@@ -86,7 +86,7 @@ export default function Experience() {
           </div>
 
           {/* Right column - Timeline visual */}
-          <div ref={rightRef} className="flex items-center justify-center">
+          <div ref={rightRef} className="hidden lg:flex items-center justify-center">
             <div className="relative flex flex-col items-center">
               {/* Glowing node */}
               <div

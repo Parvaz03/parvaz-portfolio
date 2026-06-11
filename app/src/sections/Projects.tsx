@@ -89,7 +89,7 @@ export default function Projects() {
           >
             <div className="grid grid-cols-1 lg:grid-cols-[60%_40%]">
               {/* Content */}
-              <div className="p-8 md:p-12 order-2 lg:order-1">
+              <div className="p-6 sm:p-8 md:p-12 order-2 lg:order-1">
                 <span className="inline-block font-mono text-[11px] text-[#4A7CFF] bg-[rgba(74,124,255,0.1)] px-2.5 py-1 rounded">
                   MACHINE LEARNING
                 </span>
@@ -168,7 +168,7 @@ export default function Projects() {
               className="w-full aspect-video object-cover"
             />
 
-            <div className="p-8">
+            <div className="p-6 md:p-8">
               <span className="inline-block font-mono text-[11px] text-[#8B5CF6] bg-[rgba(139,92,246,0.1)] px-2.5 py-1 rounded">
                 RESEARCH PROJECT
               </span>

@@ -12,7 +12,7 @@ import Contact from './sections/Contact';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-[#050508]">
+    <div className="relative min-h-screen bg-[#050508] overflow-x-hidden">
       <Starfield />
       <Navigation />
       <main>

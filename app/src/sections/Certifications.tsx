@@ -62,7 +62,7 @@ export default function Certifications() {
 
         <h2 className="mt-4 font-archivo text-[36px] font-bold text-[#F0F0F5]">Credentials</h2>
 
-        <div ref={cardsRef} className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div ref={cardsRef} className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert) => {
             const Icon = cert.icon;
             return (

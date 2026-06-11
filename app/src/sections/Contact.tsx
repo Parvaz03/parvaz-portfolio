@@ -110,10 +110,10 @@ export default function Contact() {
                 href={item.href}
                 target={item.href.startsWith('http') ? '_blank' : undefined}
                 rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="contact-item group bg-[rgba(10,10,15,0.6)] border border-[rgba(138,138,149,0.1)] rounded-xl p-8 hover:border-[rgba(74,124,255,0.2)] transition-colors duration-400 block"
+                className="contact-item group bg-[rgba(10,10,15,0.6)] border border-[rgba(138,138,149,0.1)] rounded-xl p-6 sm:p-8 hover:border-[rgba(74,124,255,0.2)] transition-colors duration-400 block overflow-hidden"
               >
                 <Icon size={32} className="text-[#4A7CFF]" />
-                <p className="mt-4 font-archivo text-lg font-semibold text-[#F0F0F5]">
+                <p className="mt-4 font-archivo text-base sm:text-lg font-semibold text-[#F0F0F5] break-all break-words">
                   {item.value}
                 </p>
                 <span className="mt-2 inline-block text-sm text-[#4A7CFF] group-hover:underline">

@@ -62,7 +62,7 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative bg-[#0A0A0F]"
+      className="relative bg-[#0A0A0F] overflow-hidden"
       style={{ zIndex: 3 }}
     >
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-[120px]">

@@ -120,12 +120,12 @@ export default function Skills() {
 
         <div
           ref={gridRef}
-          className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
           {skills.map((skill) => (
             <div
               key={skill.title}
-              className="skill-card group bg-[rgba(10,10,15,0.6)] border border-[rgba(138,138,149,0.1)] rounded-xl p-8 hover:border-[rgba(74,124,255,0.3)] hover:-translate-y-1 transition-all duration-400"
+              className="skill-card group bg-[rgba(10,10,15,0.6)] border border-[rgba(138,138,149,0.1)] rounded-xl p-6 md:p-8 hover:border-[rgba(74,124,255,0.3)] hover:-translate-y-1 transition-all duration-400"
               role="article"
               aria-label={skill.title}
               style={{ opacity: 0, transform: 'translateY(40px)', transition: 'opacity 0.6s ease, transform 0.6s ease' }}
